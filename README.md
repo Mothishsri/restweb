@@ -567,10 +567,9 @@ body {
 
 
 ## OUTPUT:
-![alt text](<Screenshot 2025-12-29 103338.png>)
-![alt text](<Screenshot 2025-12-29 102556.png>)
-![alt text](<Screenshot 2025-12-29 102539.png>)
-![alt text](<Screenshot 2025-12-29 102556-1.png>)
-
+![alt text](<Screenshot 2025-12-29 203618.png>)
+![alt text](<Screenshot 2025-12-29 203635.png>)
+![alt text](<Screenshot 2025-12-29 203647.png>)
+![alt text](<Screenshot 2025-12-29 102634.png>)
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
