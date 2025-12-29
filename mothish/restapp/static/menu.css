@@ -1,67 +1,101 @@
-<html>
-<head>
-    <title>Menu Page</title>
-    <link href="menu.css" rel="stylesheet">
-</head>
-<body>
-<div class="container">
-    <div class="box">
-        <div class="item">
-            <a href="home.html">HOME</a>
-            <a href="menu.html">MENU</a>
-            <a href="admin.html">ADMIN</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
-    </div>
-    <div class="menu-container">
-        <h1>MENU</h1>
-        <div class="menu-items">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-            <div class="menu-card">
-                <img src="kunafa.jpg">
-                <h3>kunafa</h3>
-                <p>Rs.250</p>
-            </div>
+body {
+    font-family: Georgia, serif;
+}
 
-            <div class="menu-card">
-                <img src="LAMB CHops.jpg">
-                <h3>Lamb chops</h3>
-                <p>Rs.1500</p>
-            </div>
+.container {
+    background: url("restbg.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    width: 100%;
+    padding: 30px 40px;
+    border: 4px solid cyan;
+    border-radius: 10px;
+}
 
-            <div class="menu-card">
-                <img src="shawarma.jpg">
-                <h3>shawarma</h3>
-                <p>Rs.200</p>
-            </div>
+.box {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
 
-            <div class="menu-card">
-                <img src="PISTA.jpg">
-                <h3>Pistachio</h3>
-                <p>Rs.300</p>
-            </div>
+.item {
+    background-color: #eef7fb;
+    padding: 15px 30px;
+}
 
-            <div class="menu-card">
-                <img src="soup.jpg">
-                <h3>soup</h3>
-                <p>Rs.450</p>
-            </div>
+.item a {
+    margin: 0 18px;
+    font-weight: bold;
+    color: hotpink;
+    text-decoration: underline;
+    font-size: 16px;
+}
 
-            <div class="menu-card">
-                <img src="kunafa.jpg">
-                <h3>desert</h3>
-                <p>Rs. 305</p>
-            </div>
+.menu-container {
+    width: 100%;
+}
 
-           
-            </div>
-        </div>
-    </div>
+.menu-container h1 {
+    font-size: 80px;
+    color: yellow;
+    letter-spacing: 6px;
+    margin-bottom: 35px;
+    text-align: center;
+    text-decoration: underline;
+}
 
-</div>
-<div class="footer">
-    <h4>Mothish.S(25010659)</h4>
-</div>
+.menu-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;   
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
 
-</body>
-</html>
+.menu-card {
+    background-color: blanchedalmond;
+    width: 180px;
+    padding: 12px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.menu-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.menu-card p {
+    font-size: 14px;
+    color: black;
+}
+@media (max-width: 1200px) {
+    .menu-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.footer {
+    background-color: cyan;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    bottom: 0%;
+}
+
